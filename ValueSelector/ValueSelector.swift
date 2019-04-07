@@ -34,11 +34,11 @@ public protocol ValueSelector {
 
 public extension ValueSelector {
 
-    public subscript (index: Int) -> Element? {
+    subscript (index: Int) -> Element? {
         return value(at: index)
     }
 
-    public var selectedIndex: Int? {
+    var selectedIndex: Int? {
         guard let selectedValue = selectedValue else {
             return nil
         }
@@ -46,15 +46,15 @@ public extension ValueSelector {
         return values.index(of: selectedValue)
     }
 
-    mutating public func selectValue(at index: Int) {
+    mutating func selectValue(at index: Int) {
         selectedValue = values[index]
     }
 
-    mutating public func selectValue(_ value: Element) {
+    mutating func selectValue(_ value: Element) {
         selectedValue = value
     }
 
-    public func value(at index: Int) -> Element? {
+    func value(at index: Int) -> Element? {
         return values[safe: index]
     }
 }

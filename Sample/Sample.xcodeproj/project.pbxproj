@@ -78,12 +78,12 @@
 			children = (
 				21701AFC222C5F8800C6BD55 /* Info.plist */,
 				21701AF0222C5F8700C6BD55 /* AppDelegate.swift */,
-				2107B587222DFC2E00B25E2A /* ColorSelector.swift */,
-				21701B0E222C61EE00C6BD55 /* SelectColorTableViewCell.swift */,
 				21701AF2222C5F8700C6BD55 /* ViewController.swift */,
 				21701AF7222C5F8800C6BD55 /* Assets.xcassets */,
 				21701AF9222C5F8800C6BD55 /* LaunchScreen.storyboard */,
 				21701AF4222C5F8700C6BD55 /* Main.storyboard */,
+				21F7AC23225A552400CCCB1F /* Selector */,
+				21F7AC24225A553000CCCB1F /* View */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -94,6 +94,22 @@
 				21701B09222C5FE700C6BD55 /* ValueSelector.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21F7AC23225A552400CCCB1F /* Selector */ = {
+			isa = PBXGroup;
+			children = (
+				2107B587222DFC2E00B25E2A /* ColorSelector.swift */,
+			);
+			path = Selector;
+			sourceTree = "<group>";
+		};
+		21F7AC24225A553000CCCB1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21701B0E222C61EE00C6BD55 /* SelectColorTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
